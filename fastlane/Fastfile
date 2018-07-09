@@ -1,0 +1,56 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Description of what the lane does"
+  lane :build do
+    scan(
+      project: "DangerTest.xcodeproj",
+      scheme: "DangerTest",
+      build_for_testing: true,
+      derived_data_path: "build",
+      output_types: "junit",
+    )
+  end
+
+  lane :test do
+    scan(
+      project: "DangerTest.xcodeproj",
+      scheme: "DangerTest",
+      devices: ["iPhone SE"],
+      test_without_building: true,
+      derived_data_path: "build",
+      result_bundle: true,
+      output_directory: "test_results/",
+    )
+  end
+
+  lane :run_danger do
+    danger(
+      danger_id: "unit-tests",
+      dangerfile: "Dangerfile",
+      github_api_token: ENV["GITHUB_API_TOKEN"],
+      verbose: true,
+    )
+  end
+
+  lane :ci do
+    build
+    test
+    danger
+  end
+end

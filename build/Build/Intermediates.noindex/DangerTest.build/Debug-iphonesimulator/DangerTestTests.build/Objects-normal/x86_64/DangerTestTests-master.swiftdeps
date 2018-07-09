@@ -1,0 +1,5 @@
+version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
+options: "caa6b6179b24bfa87c9737cb5069df26"
+build_time: [1531160756, 486548000]
+inputs:
+  "/Users/miles/Projects/DangerTest/DangerTestTests/DangerTestTests.swift": [1531160651, 0]

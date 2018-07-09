@@ -12,7 +12,18 @@
 		02D0939720F3DE0100638437 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02D0939520F3DE0100638437 /* Main.storyboard */; };
 		02D0939920F3DE0300638437 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02D0939820F3DE0300638437 /* Assets.xcassets */; };
 		02D0939C20F3DE0300638437 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02D0939A20F3DE0300638437 /* LaunchScreen.storyboard */; };
+		02D093AA20F3DFBF00638437 /* DangerTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D093A920F3DFBF00638437 /* DangerTestTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02D093AC20F3DFBF00638437 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02D0938620F3DE0100638437 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02D0938D20F3DE0100638437;
+			remoteInfo = DangerTest;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		02D0938E20F3DE0100638437 /* DangerTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DangerTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +33,20 @@
 		02D0939820F3DE0300638437 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02D0939B20F3DE0300638437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02D0939D20F3DE0300638437 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02D093A720F3DFBF00638437 /* DangerTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DangerTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02D093A920F3DFBF00638437 /* DangerTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DangerTestTests.swift; sourceTree = "<group>"; };
+		02D093AB20F3DFBF00638437 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		02D0938B20F3DE0100638437 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02D093A420F3DFBF00638437 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				02D0939020F3DE0100638437 /* DangerTest */,
+				02D093A820F3DFBF00638437 /* DangerTestTests */,
 				02D0938F20F3DE0100638437 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				02D0938E20F3DE0100638437 /* DangerTest.app */,
+				02D093A720F3DFBF00638437 /* DangerTestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +85,15 @@
 				02D0939D20F3DE0300638437 /* Info.plist */,
 			);
 			path = DangerTest;
+			sourceTree = "<group>";
+		};
+		02D093A820F3DFBF00638437 /* DangerTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				02D093A920F3DFBF00638437 /* DangerTestTests.swift */,
+				02D093AB20F3DFBF00638437 /* Info.plist */,
+			);
+			path = DangerTestTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +116,24 @@
 			productReference = 02D0938E20F3DE0100638437 /* DangerTest.app */;
 			productType = "com.apple.product-type.application";
 		};
+		02D093A620F3DFBF00638437 /* DangerTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02D093AE20F3DFBF00638437 /* Build configuration list for PBXNativeTarget "DangerTestTests" */;
+			buildPhases = (
+				02D093A320F3DFBF00638437 /* Sources */,
+				02D093A420F3DFBF00638437 /* Frameworks */,
+				02D093A520F3DFBF00638437 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02D093AD20F3DFBF00638437 /* PBXTargetDependency */,
+			);
+			name = DangerTestTests;
+			productName = DangerTestTests;
+			productReference = 02D093A720F3DFBF00638437 /* DangerTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +146,10 @@
 				TargetAttributes = {
 					02D0938D20F3DE0100638437 = {
 						CreatedOnToolsVersion = 9.4.1;
+					};
+					02D093A620F3DFBF00638437 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 02D0938D20F3DE0100638437;
 					};
 				};
 			};
@@ -113,6 +167,7 @@
 			projectRoot = "";
 			targets = (
 				02D0938D20F3DE0100638437 /* DangerTest */,
+				02D093A620F3DFBF00638437 /* DangerTestTests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +183,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		02D093A520F3DFBF00638437 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,7 +202,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		02D093A320F3DFBF00638437 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02D093AA20F3DFBF00638437 /* DangerTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02D093AD20F3DFBF00638437 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02D0938D20F3DE0100638437 /* DangerTest */;
+			targetProxy = 02D093AC20F3DFBF00638437 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		02D0939520F3DE0100638437 /* Main.storyboard */ = {
@@ -310,6 +388,44 @@
 			};
 			name = Release;
 		};
+		02D093AF20F3DFBF00638437 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DangerTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wagwalking.DangerTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DangerTest.app/DangerTest";
+			};
+			name = Debug;
+		};
+		02D093B020F3DFBF00638437 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DangerTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wagwalking.DangerTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DangerTest.app/DangerTest";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -327,6 +443,15 @@
 			buildConfigurations = (
 				02D093A120F3DE0300638437 /* Debug */,
 				02D093A220F3DE0300638437 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02D093AE20F3DFBF00638437 /* Build configuration list for PBXNativeTarget "DangerTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02D093AF20F3DFBF00638437 /* Debug */,
+				02D093B020F3DFBF00638437 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

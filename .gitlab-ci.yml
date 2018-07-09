@@ -1,0 +1,8 @@
+stages:
+  - build
+
+build:
+  stage: build
+  script:
+    - bundle install
+    - bundle exec fastlane ci
