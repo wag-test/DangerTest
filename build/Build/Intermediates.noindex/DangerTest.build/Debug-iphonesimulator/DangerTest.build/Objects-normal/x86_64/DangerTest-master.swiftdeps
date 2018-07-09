@@ -1,6 +1,0 @@
-version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
-options: "f65830ae964f7d5e9f6b62f2b0bbefda"
-build_time: [1531160748, 226458000]
-inputs:
-  "/Users/miles/Projects/DangerTest/DangerTest/ViewController.swift": [1531160193, 0]
-  "/Users/miles/Projects/DangerTest/DangerTest/AppDelegate.swift": [1531160193, 0]
