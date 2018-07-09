@@ -36,6 +36,7 @@ platform :ios do
       derived_data_path: "build",
       result_bundle: true,
       output_directory: "test_results/",
+      fail_build: false,
     )
   end
 
