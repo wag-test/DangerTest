@@ -1,5 +1,7 @@
-PATH
-  remote: ../../projects/danger
+GIT
+  remote: git@github.com:wag-miles/danger.git
+  revision: 2234453e8997ea42ebdecf4b914032da09e9d662
+  branch: gitlab-ci_with_github
   specs:
     danger (5.6.2)
       claide (~> 1.0)
